@@ -1,0 +1,12 @@
+ts_utc,camera_id,rule_id,severity,clip_path,meta
+1760039522,CAM_DEMO,MOTION_IN_ROI,MEDIUM,C:\ai-camera-proto\data\clips\CAM_DEMO_MOTION_IN_ROI_20251009_195202.mp4,{'motion_area_px': 100554}
+1760039531,CAM_DEMO,MOTION_IN_ROI,MEDIUM,C:\ai-camera-proto\data\clips\CAM_DEMO_MOTION_IN_ROI_20251009_195211.mp4,{'motion_area_px': 2156}
+1760039672,CAM_DEMO,MOTION_IN_ROI,MEDIUM,C:\ai-camera-proto\data\clips\CAM_DEMO_MOTION_IN_ROI_20251009_195431.mp4,{'motion_area_px': 100554}
+1760039678,CAM_DEMO,MOTION_IN_ROI,MEDIUM,C:\ai-camera-proto\data\clips\CAM_DEMO_MOTION_IN_ROI_20251009_195438.mp4,{'motion_area_px': 2156}
+1760039757,CAM_DEMO,MOTION_IN_ROI,MEDIUM,C:\ai-camera-proto\data\clips\CAM_DEMO_MOTION_IN_ROI_20251009_195557.mp4,{'motion_area_px': 100554}
+1760039763,CAM_DEMO,MOTION_IN_ROI,MEDIUM,C:\ai-camera-proto\data\clips\CAM_DEMO_MOTION_IN_ROI_20251009_195603.mp4,{'motion_area_px': 2156}
+1760040780,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251009_201259.mp4,"{'model': 'hand', 'detections': 2, 'roi': 'roi_1'}"
+1760040800,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251009_201319.mp4,"{'model': 'yolo', 'detections': 1, 'roi': 'roi_1'}"
+1760040885,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251009_201444.mp4,"{'model': 'hand', 'detections': 2, 'roi': 'roi_1'}"
+1760040904,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251009_201504.mp4,"{'model': 'yolo', 'detections': 1, 'roi': 'roi_1'}"
+1760041342,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251009_202221.mp4,"{'model': 'hand', 'detections': 1, 'roi': 'roi_1'}"

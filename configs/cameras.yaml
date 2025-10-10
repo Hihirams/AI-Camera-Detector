@@ -1,0 +1,6 @@
+cameras:
+  CAM_DEMO:
+    source: "file://data/samples/11.mp4"
+    width: 1280
+    height: 720
+    fps_target: 25

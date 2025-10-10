@@ -1,0 +1,5 @@
+{
+  "conf_yolo": 0.35,
+  "yolo_path": "yolov8n.pt",
+  "conf_hand": 0.5
+}
