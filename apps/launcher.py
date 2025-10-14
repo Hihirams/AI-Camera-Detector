@@ -122,10 +122,19 @@ def update_camera_source(camera_id: str, source_url: str, width: int, height: in
     return cams[camera_id]
 
 def run_module(mod: str, args: list[str]) -> int:
-    # Usa el mismo intérprete del venv actual
+    """Ejecuta un módulo Python en un subproceso con el entorno correcto."""
+    import subprocess, sys, os
     cmd = [sys.executable, "-m", mod] + args
     print(">", " ".join(cmd))
-    return subprocess.call(cmd)
+    
+    # Copiar el entorno actual y asegurar PYTHONPATH
+    env = os.environ.copy()
+    env["PYTHONPATH"] = str(REPO)
+    
+    # Ejecutar con el directorio correcto
+    rc = subprocess.call(cmd, cwd=str(REPO), env=env)
+    print(f"[subprocess] return code: {rc}")
+    return rc
 
 def menu_input(prompt: str, default: str | None = None) -> str:
     s = input(f"{prompt} " + (f"[{default}]: " if default else ": "))

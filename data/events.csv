@@ -10,3 +10,7 @@ ts_utc,camera_id,rule_id,severity,clip_path,meta
 1760040885,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251009_201444.mp4,"{'model': 'hand', 'detections': 2, 'roi': 'roi_1'}"
 1760040904,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251009_201504.mp4,"{'model': 'yolo', 'detections': 1, 'roi': 'roi_1'}"
 1760041342,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251009_202221.mp4,"{'model': 'hand', 'detections': 1, 'roi': 'roi_1'}"
+1760451868,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251014_142427.mp4,"{'model': 'hand', 'detections': 2, 'roi': 'roi_1'}"
+1760457342,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251014_155542.mp4,"{'model': 'yolo', 'detections': 4, 'roi': 'roi_1'}"
+1760457448,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251014_155727.mp4,"{'model': 'yolo', 'detections': 4, 'roi': 'roi_1'}"
+1760457517,CAM_DEMO,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_DEMO_HAND_IN_ROI_20251014_155837.mp4,"{'model': 'yolo', 'detections': 4, 'roi': 'roi_1'}"
