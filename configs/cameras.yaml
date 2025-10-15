@@ -1,6 +1,14 @@
 cameras:
-  CAM_DEMO:
-    source: "file://data/samples/13.mp4"
+  CAM_01:
+    source: "file://data/samples/6.mp4"
     width: 1280
     height: 720
     fps_target: 25
+
+  CAM_02:
+    source: "file://data/samples/13.mp4" 
+    width: 1280
+    height: 720
+    fps_target: 25
+
+

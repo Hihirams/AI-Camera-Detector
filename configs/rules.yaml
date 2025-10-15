@@ -1,0 +1,12 @@
+rules:
+  - id: HAND_IN_FORBIDDEN_ZONE
+    model: hand         # hand | yolo (person)  | (futuro: face)
+    roi: roi_1
+    severity: high
+    conf_override: 0.50 # opcional: si no pones, toma el --conf
+
+  - id: PERSON_IN_RESTRICTED_AREA
+    model: yolo
+    roi: roi_1
+    severity: medium
+    conf_override: 0.35
