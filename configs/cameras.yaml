@@ -1,14 +1,14 @@
 cameras:
   CAM_01:
-    source: "file://data/samples/6.mp4"
-    width: 1280
     height: 720
     fps_target: 25
-
   CAM_02:
-    source: "file://data/samples/13.mp4" 
+    source: "file:/data/samples/13.mp4"
     width: 1280
     height: 720
     fps_target: 25
-
-
+  CAM_TAPO:
+    source: "rtsp://Hihirams:Borns123@192.168.100.156:554/stream2"
+    width: 1280   # o 640/854 según stream2
+    height: 720
+    fps_target: 12

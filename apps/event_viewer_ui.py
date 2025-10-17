@@ -9,7 +9,7 @@ from tkinter import ttk, messagebox, filedialog
 # Asegura que se pueda importar el event_viewer base
 HERE = Path(__file__).resolve()
 APPS_DIR = HERE.parent
-REPO_ROOT = APPS_DIR.parent
+REPO_ROOT = Path(r"C:\Dev\AI-Camera-Detector")
 sys.path.append(str(APPS_DIR))
 
 try:
@@ -17,7 +17,15 @@ try:
 except Exception as e:
     raise SystemExit(f"[ERR] No se pudo importar event_viewer.py: {e}")
 
-EVENTS_CSV = ev.EVENTS_CSV  # usa la misma ruta base
+# 🔧 CONFIGURACIÓN FIJA: Apunta directamente a la ruta correcta
+EVENTS_CSV = REPO_ROOT / "data" / "events.csv"
+
+# Verificación de existencia al inicio
+if not EVENTS_CSV.exists():
+    print(f"[WARN] No se encontró events.csv en {EVENTS_CSV}")
+    print(f"[INFO] Asegúrate de que el archivo existe en esa ubicación.")
+else:
+    print(f"[OK] events.csv encontrado en: {EVENTS_CSV}")
 
 # ---------------------------------------------------------
 # Interfaz gráfica principal
@@ -25,7 +33,7 @@ EVENTS_CSV = ev.EVENTS_CSV  # usa la misma ruta base
 class EventViewerUI(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("AI Camera – Event Viewer (Lista)")
+        self.title("AI Camera — Event Viewer (Lista)")
         self.geometry("1000x600")
         self.minsize(900, 520)
 
@@ -120,7 +128,7 @@ class EventViewerUI(tk.Tk):
                                  r.get("clip_path", ""),
                              ))
 
-        self.title(f"AI Camera – Event Viewer (Lista)  |  {len(rows)} eventos")
+        self.title(f"AI Camera — Event Viewer (Lista)  |  {len(rows)} eventos")
 
     # ---------------------------------------------------------
     def _get_selected_row(self):

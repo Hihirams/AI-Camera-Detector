@@ -48,7 +48,9 @@ def read_events(path: Path) -> list[dict]:
         for r in reader:
             r = {k.strip(): (v.strip() if isinstance(v, str) else v) for k, v in r.items()}
             try:
-                r["_ts"] = parse_date(r.get("timestamp") or r.get("time") or r.get("ts") or "")
+                r["_ts"] = parse_date(
+    r.get("timestamp") or r.get("time") or r.get("ts") or r.get("ts_utc") or r.get("ts_iso_utc") or ""
+)
             except Exception:
                 r["_ts"] = None
             meta = r.get("meta") or "{}"
