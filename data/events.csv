@@ -13,3 +13,4 @@ ts_utc,camera_id,rule_id,severity,clip_path,meta
 1760666627,CAM_TAPO,HAND_IN_ROI,HIGH,C:\Dev\AI-Camera-Detector\data\clips\CAM_TAPO_HAND_IN_ROI_20251017_020347.mp4,"{'model': 'yolo', 'detections': 3, 'roi': 'roi_1'}"
 1760666636,CAM_TAPO,HAND_IN_ROI,HIGH,C:\Dev\AI-Camera-Detector\data\clips\CAM_TAPO_HAND_IN_ROI_20251017_020356.mp4,"{'model': 'yolo', 'detections': 2, 'roi': 'roi_1'}"
 1760667876,CAM_TAPO,HAND_IN_ROI,HIGH,C:\Dev\AI-Camera-Detector\data\clips\CAM_TAPO_HAND_IN_ROI_20251017_022435.mp4,"{'model': 'yolo', 'detections': 2, 'roi': 'roi_1'}"
+1760968297,CAM_01,HAND_IN_ROI,HIGH,C:\ai-camera-proto\data\clips\CAM_01_HAND_IN_ROI_20251020_135136.mp4,"{'model': 'hand', 'detections': 1, 'roi': 'roi_1'}"

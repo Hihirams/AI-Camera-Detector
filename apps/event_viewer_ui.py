@@ -9,7 +9,7 @@ from tkinter import ttk, messagebox, filedialog
 # Asegura que se pueda importar el event_viewer base
 HERE = Path(__file__).resolve()
 APPS_DIR = HERE.parent
-REPO_ROOT = Path(r"C:\Dev\AI-Camera-Detector")
+REPO_ROOT = APPS_DIR.parent  # Calcula dinámicamente desde la ubicación del script
 sys.path.append(str(APPS_DIR))
 
 try:

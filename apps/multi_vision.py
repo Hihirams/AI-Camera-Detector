@@ -31,7 +31,15 @@ ROIS_DIR = CONFIGS / "rois"
 # ---------- Utils ----------
 def resolve_source(url: str) -> str:
     if url.startswith("file://"):
-        return url.replace("file:///", "").replace("file://", "")
+        # Eliminar prefijo file://
+        path_str = url.replace("file:///", "").replace("file://", "")
+        path = Path(path_str)
+        
+        # Si es relativa, hacerla absoluta respecto a REPO_ROOT
+        if not path.is_absolute():
+            path = REPO_ROOT / path
+        
+        return str(path)
     return url
 
 def load_yaml_cameras(path: Path) -> Dict[str, Dict[str, Any]]:

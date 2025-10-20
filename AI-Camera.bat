@@ -1,9 +1,5 @@
 @echo off
-
-cd /d C:\ai-camera-proto
-
+cd /d "%~dp0"
 call .venv\Scripts\activate
-
 python -m apps.launcher
-
-CAM_DEMO
+pause
